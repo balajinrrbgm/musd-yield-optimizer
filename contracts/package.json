@@ -1,0 +1,24 @@
+{
+  "name": "musd-yield-vault-contracts",
+  "version": "1.0.0",
+  "description": "MezoYield - MUSD Yield Vault Smart Contracts",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:matsnet": "hardhat run scripts/deploy.ts --network matsnet",
+    "deploy:local": "hardhat run scripts/deploy.ts --network hardhat",
+    "verify": "hardhat verify --network matsnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "dotenv": "^16.0.0",
+    "hardhat": "^2.22.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.0.0",
+    "chai": "^4.3.0",
+    "ethers": "^6.0.0"
+  }
+}
